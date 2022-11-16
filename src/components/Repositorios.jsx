@@ -19,7 +19,9 @@ export function Repositorios() {
             {reposFromApi.map(item => {
                 return (
                     <div key={item.id}> 
-                        <p>{item.name}</p>
+                        <h3>{item.name}</h3>
+                        <p>{item.description}</p>
+                        <a href={item.html_url}>Conferir</a>
                     </div>
                 )
             })}

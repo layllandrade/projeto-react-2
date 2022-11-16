@@ -4,7 +4,7 @@ export function Search() {
     }
     return (
         <div className="Search">
-            <input placeholder="Digite sua busca" onChange={pegaInput} />
+            <input placeholder="Digite um repo" onChange={pegaInput} />
         </div>
     )
-    }
+}
