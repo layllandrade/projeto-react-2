@@ -3,7 +3,7 @@
 Turma Online 20 - Todas em Tech  | Front-end | Semana 13 | 2022 | { Profa } Simara Conceição
 
 ### O que é o projeto
-Esse projeto feito em React.js, utilizando a Api, demonstra uma lista de repositorios criados por mim em meu perfil do Github.
+Esse projeto feito em React.js, utilizando a Api do Github, demonstra uma lista de repositorios criados por mim.
 
 ### O que eu aprendi com esse projeto
 * React Hooks
