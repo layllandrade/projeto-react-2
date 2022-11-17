@@ -127,6 +127,26 @@ function ListaDeRepositorios() {
 ```
 Para que fosse possível gerar dinamicamente, utilizamos o método map() para poder percorrer o nosso array repositorio, que possui a lista de repositórios, e imprimir um a um na tela.
 
+externas.
+
+### Tecnologia usadas
+
+* Vite
+
+Vite é uma ferramenta de construção para front-end. Ele fornece uma ferramenta de criação rápida e opinativa pronta para uso, com API altamente personalizável usando plug-ins. Vite usa Rollup.js internamente para empacotamento. É independente de plataforma, o que significa que oferece suporte a muitas bibliotecas de front-end populares, incluindo React, Vue.js, Preact e vanilla JavaScript, por meio de modelos.
+
+* NPM
+
+O NPM, que significa Node Package Manager, é um poderoso gerenciador de pacotes que faz parte do Node.js. Esse, por sua vez, é um ambiente para a execução de JavaScript no lado do servidor de hospedagem. Em outras palavras, ele permite utilizar a linguagem JavaScript no back-end da aplicação. Trata-se de uma ferramenta crucial para realizar um desenvolvimento organizado e otimizado, pois permite instalar dependências em um projeto, mantê-las atualizadas e muito mais. 
+
+* ReactJS
+
+O React é a biblioteca mais popular do JavaScript e é usada para construir uma interface de usuário (IU). Ela oferece uma resposta excelente para o usuário adicionar comandos usando um novo método de renderizar sites. Os componentes dessa ferramenta foram desenvolvidos pelo Facebook. Ela foi lançada em 2013 como uma ferramenta JavaScript de código aberto. Atualmente, ela permanece na frente das suas principais competidoras, como a Angular e a Bootstrap, as duas bibliotecas JavaScript mais bem
+
+* Axios 
+
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser utilizado tanto no navegador quanto no Node.js ou qualquer serviço de API.
+
 ### Como rodar esse projeto localmente
 
 * Faça o fork
