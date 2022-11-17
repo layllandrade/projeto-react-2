@@ -16,7 +16,7 @@ Dentro da nossa rotina de desenvolvimento, uma tarefa comum é a criação de um
 
 Normalmente, colocamos os nossos projetos dentro do Github, porém, se a gente quiser criar o nosso site para mostrar estes projetos, como faríamos?
 
-Em nosso projeto com React, teremos um componente que será responsável por listar os nossos repositórios do GitHub. Gostaríamos de ter uma estrutura como esta abaixo:
+Em nosso projeto com React, teremos um componente que será responsável por listar os nossos repositórios do GitHub. Gostaríamos de ter uma estrutura como esta do exemplo abaixo:
 
 ```
 import React from 'react';
