@@ -2,22 +2,9 @@ import {useState, useEffect } from 'react'
 import Axios from 'axios'
 
 export function Search() {
-    function pegaInput(event) {
-        console.log(event.target.value)
-    }
-
-    return (
-        <>
-            <div className="Search">
-                <input placeholder="Digite um repo" onChange={pegaInput} />
-            </div>
-            <Repositorios />
-        </>
-    )
-}
-
-export function Repositorios() {   
     const [reposFromApi, setReposFromApi] = useState([])
+    const [termoBuscado, setTermoBuscado] = useState('')
+    const [repositoriosFiltrados, setRepositoriosFiltrados] = useState([])
     const baseURL ='https://api.github.com/users/layllandrade/repos'
 
     useEffect (() => {
@@ -25,21 +12,33 @@ export function Repositorios() {
             const response = await Axios.get(baseURL)
             setReposFromApi(response.data)
         }
-
         getData()
     }, [])
 
+    function pegaInput(event) {
+        setTermoBuscado(event.target.value)
+    }
+
+    useEffect(()=> {
+        setRepositoriosFiltrados(reposFromApi.filter(reposFromApi => {
+            return reposFromApi.name.includes(termoBuscado)
+        }))
+    },[reposFromApi, termoBuscado])
+
     return (
-        <div>
-            {reposFromApi.map(item => {
-                return (
-                    <div key={item.id}> 
-                        <h3>{item.name}</h3>
-                        <p>{item.description}</p>
-                        <a href={item.html_url}>Conferir</a>
-                    </div>
+        <>
+            <div className="Search">
+                <input placeholder="Digite um repo" onChange={pegaInput} />
+                {repositoriosFiltrados.map(reposFromApi => {
+                    return(
+                        <>
+                        <h3 key={reposFromApi.id}>{reposFromApi.name}</h3>
+                        <p>{reposFromApi.description}</p>
+                        <a href={reposFromApi.html_url}>Conferir</a>
+                        </>
                 )
-            })}
-        </div>
+                })}
+            </div>
+        </>
     )
 }

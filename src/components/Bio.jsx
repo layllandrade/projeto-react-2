@@ -10,7 +10,7 @@ export function Bio(props) {
                 da tecnologia, encontrei no reprograma a oportunidade de migração de carreira, onde atualmente sou Aluna Front-end
                 da turma On20.
                 Confira abaixo meus conteudos favoritos:" /> 
-            <Imagem imagem="https://avatars.githubusercontent.com/u/109319620?s=400&u=bd7d953440abbd2f57355aebeb42ad2c09f55a9d&v=4"/>
+            <Imagem className="img" imagem="https://avatars.githubusercontent.com/u/109319620?s=400&u=bd7d953440abbd2f57355aebeb42ad2c09f55a9d&v=4"/>
         </div>
     )
 }
